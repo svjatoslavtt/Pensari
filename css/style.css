@@ -1,0 +1,1509 @@
+@font-face {
+  font-family: 'DroidSerifItalic';
+  src: url("fonts/DroidSerifItalic.eot");
+  src: url("fonts/DroidSerifItalic.eot") format("embedded-opentype"), url("fonts/DroidSerifItalic.woff2") format("woff2"), url("fonts/DroidSerifItalic.woff") format("woff"), url("fonts/DroidSerifItalic.ttf") format("truetype"), url("fonts/DroidSerifItalic.svg#DroidSerifItalic") format("svg");
+}
+
+@font-face {
+  font-family: 'DroidSerifRegular';
+  src: url("fonts/DroidSerifRegular.eot");
+  src: url("fonts/DroidSerifRegular.eot") format("embedded-opentype"), url("fonts/DroidSerifRegular.woff2") format("woff2"), url("fonts/DroidSerifRegular.woff") format("woff"), url("fonts/DroidSerifRegular.ttf") format("truetype"), url("fonts/DroidSerifRegular.svg#DroidSerifRegular") format("svg");
+}
+
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url("fonts/MontserratRegular.eot");
+  src: url("fonts/MontserratRegular.eot") format("embedded-opentype"), url("fonts/MontserratRegular.woff2") format("woff2"), url("fonts/MontserratRegular.woff") format("woff"), url("fonts/MontserratRegular.ttf") format("truetype"), url("fonts/MontserratRegular.svg#MontserratRegular") format("svg");
+}
+
+@font-face {
+  font-family: 'MontserratBold';
+  src: url("fonts/MontserratBold.eot");
+  src: url("fonts/MontserratBold.eot") format("embedded-opentype"), url("fonts/MontserratBold.woff2") format("woff2"), url("fonts/MontserratBold.woff") format("woff"), url("fonts/MontserratBold.ttf") format("truetype"), url("fonts/MontserratBold.svg#MontserratBold") format("svg");
+}
+
+@font-face {
+  font-family: 'MontserratSemiBold';
+  src: url("fonts/MontserratSemiBold.eot");
+  src: url("fonts/MontserratSemiBold.eot") format("embedded-opentype"), url("fonts/MontserratSemiBold.woff2") format("woff2"), url("fonts/MontserratSemiBold.woff") format("woff"), url("fonts/MontserratSemiBold.ttf") format("truetype"), url("fonts/MontserratSemiBold.svg#MontserratSemiBold") format("svg");
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("fonts/RobotoRegular.eot");
+  src: url("fonts/RobotoRegular.eot") format("embedded-opentype"), url("fonts/RobotoRegular.woff2") format("woff2"), url("fonts/RobotoRegular.woff") format("woff"), url("fonts/RobotoRegular.ttf") format("truetype"), url("fonts/RobotoRegular.svg#RobotoRegular") format("svg");
+}
+
+@font-face {
+  font-family: 'robotoBlack';
+  src: url("fonts/robotoBlack.eot");
+  src: url("fonts/robotoBlack.eot") format("embedded-opentype"), url("fonts/robotoBlack.woff2") format("woff2"), url("fonts/robotoBlack.woff") format("woff"), url("fonts/robotoBlack.ttf") format("truetype"), url("fonts/robotoBlack.svg#robotoBlack") format("svg");
+}
+
+@font-face {
+  font-family: 'robotoBold';
+  src: url("fonts/robotoBold.eot");
+  src: url("fonts/robotoBold.eot") format("embedded-opentype"), url("fonts/robotoBold.woff2") format("woff2"), url("fonts/robotoBold.woff") format("woff"), url("fonts/robotoBold.ttf") format("truetype"), url("fonts/robotoBold.svg#robotoBold") format("svg");
+}
+
+@font-face {
+  font-family: 'robotoLight';
+  src: url("fonts/robotoLight.eot");
+  src: url("fonts/robotoLight.eot") format("embedded-opentype"), url("fonts/robotoLight.woff2") format("woff2"), url("fonts/robotoLight.woff") format("woff"), url("fonts/robotoLight.ttf") format("truetype"), url("fonts/robotoLight.svg#robotoLight") format("svg");
+}
+
+@font-face {
+  font-family: 'robotoMedium';
+  src: url("fonts/robotoMedium.eot");
+  src: url("fonts/robotoMedium.eot") format("embedded-opentype"), url("fonts/robotoMedium.woff2") format("woff2"), url("fonts/robotoMedium.woff") format("woff"), url("fonts/robotoMedium.ttf") format("truetype"), url("fonts/robotoMedium.svg#robotoMedium") format("svg");
+}
+
+/*--- variables ---*/
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main-wrapper {
+  overflow-x: hidden;
+}
+
+#header .header-top, #header .header-top .header-nav ul, #header .header-content, #about .wrap, #about .wrap .about-text, #about .wrap .about-think, #work .serve .serve-icons, #work .serve .serve-icons .ico-one .image, #work .serve .serve-icons .ico-two .image, #work .serve .serve-icons .ico-three .image, #work .points, #work .points .first-point, #work .points .second-point, #work .points .third-point, #research .research, #research .qualitative, #research .qualitative .qualitative-first, #team .header-caption, #team .worker, #team .worker .worker-data .worker-header, #team .worker .worker-data .worker-header .connect, #contact .form-main, #contact .form-main .form-caption, #contact .form-main .form-send, #contact .form-main .form-send .form-header, #footer .footer, #footer .footer .footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
+}
+
+::selection {
+  background: #444444;
+}
+
+#header {
+  position: relative;
+  height: 100vh;
+  min-height: 670px;
+  background: url("/img/header.png") no-repeat center 0/cover;
+  box-sizing: content-box;
+}
+
+#header .header-top {
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+#header .header-top .header-nav ul li {
+  padding-top: 18px;
+  border-top: 3px solid transparent;
+  font-family: "MontserratRegular";
+  font-size: 12px;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#header .header-top .header-nav ul li a {
+  padding-top: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .header-top .header-nav ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+#header .header-top .header-nav ul .header-home:hover {
+  border-top: 3px solid #00659F;
+}
+
+#header .header-top .header-nav ul .header-about:hover {
+  border-top: 3px solid #F78B34;
+}
+
+#header .header-top .header-nav ul .header-work:hover {
+  border-top: 3px solid #7CC24D;
+}
+
+#header .header-top .header-nav ul .header-team:hover {
+  border-top: 3px solid #43C6F4;
+}
+
+#header .header-top .header-nav ul .header-contact:hover {
+  border-top: 3px solid #C01E6B;
+}
+
+#header .header-content {
+  height: 550px;
+  align-items: center;
+}
+
+#header .header-content .text-first {
+  font-size: 4.3vmin;
+  font-family: "DroidSerifRegular";
+  color: #fff;
+}
+
+#header .header-content .text-first span {
+  font-family: "DroidSerifItalic";
+}
+
+#header .header-content .text-second {
+  margin-top: 13px;
+  font-size: 8.6vmin;
+  font-family: "DroidSerifRegular";
+  color: #fff;
+}
+
+#header .header-content .text-third {
+  margin-top: 45px;
+  margin-bottom: 35px;
+  width: 515px;
+  font-size: 2.6vmin;
+  font-family: "robotoLight";
+  color: #fff;
+  line-height: 20px;
+}
+
+#header .header-content .header-content-contact {
+  width: 500px;
+  padding-top: 20px;
+  border-top: 3px solid #FFC325;
+  font-size: 2.2vmin;
+  font-family: "MontserratBold";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#header .header-content .header-content-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .header-content .header-content-contact a span {
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  transition: all 0.3s ease;
+}
+
+#header .header-content .header-content-contact a span:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("../img/header-arrow.png") no-repeat center center;
+  transition: all 0.3s ease;
+}
+
+#header .header-content .header-content-contact a span:hover {
+  color: #43C6F4;
+}
+
+#header .header-content .header-content-contact a span:hover:after {
+  right: 15px;
+  background: url("../img/header-arrow-hover.png") no-repeat center center;
+}
+
+#about {
+  position: relative;
+  min-height: 1175px;
+}
+
+#about .about {
+  min-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  height: 80px;
+  background-color: #F78B34;
+}
+
+#about .about span {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#about .about h1 {
+  font-size: 6.5vmin;
+  font-family: "robotoLight";
+  color: #fff;
+}
+
+#about .wrap {
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+#about .wrap .about-text {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 442px;
+  height: 260px;
+}
+
+#about .wrap .about-text .text-first {
+  font-family: "robotoLight";
+  font-size: 22px;
+  color: #365564;
+  line-height: 25px;
+}
+
+#about .wrap .about-text .text-second {
+  font-family: "robotoMedium";
+  font-size: 22px;
+  color: #0A2F41;
+}
+
+#about .wrap .about-text .text-second span {
+  color: #F78B34;
+}
+
+#about .wrap .about-text .text-third {
+  font-family: "robotoLight";
+  font-size: 22px;
+  color: #365564;
+  line-height: 25px;
+}
+
+#about .wrap .about-think {
+  justify-content: space-between;
+  width: 680px;
+}
+
+#about .wrap .about-think .about-think-colone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+
+#about .wrap .about-think .about-think-colone .think-one {
+  position: relative;
+  width: 330px;
+  height: 240px;
+  text-align: left;
+  background: url("../img/about-image2.png") no-repeat;
+  color: #fff;
+  line-height: 30px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#about .wrap .about-think .about-think-colone .think-one .layout {
+  position: absolute;
+  width: 330px;
+  height: 240px;
+  background-color: rgba(0, 101, 159, 0.5);
+}
+
+#about .wrap .about-think .about-think-colone .think-one .text {
+  position: absolute;
+}
+
+#about .wrap .about-think .about-think-colone .think-one .caption {
+  margin-top: 130px;
+  padding-left: 40px;
+  font-family: "DroidSerifItalic";
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+
+#about .wrap .about-think .about-think-colone .think-one .desc {
+  padding-left: 40px;
+  width: 260px;
+  font-family: "robotoBlack";
+  font-size: 22px;
+}
+
+#about .wrap .about-think .about-think-colone .think-one .desc span {
+  opacity: 0;
+}
+
+#about .wrap .about-think .about-think-colone .think-one:hover .layout {
+  background-color: #00659f;
+}
+
+#about .wrap .about-think .about-think-colone .think-one:hover .caption {
+  margin-top: 30px;
+}
+
+#about .wrap .about-think .about-think-colone .think-one:hover span {
+  opacity: 1;
+}
+
+#about .wrap .about-think .about-think-colone .think-two {
+  position: relative;
+  width: 330px;
+  height: 240px;
+  text-align: left;
+  background: url("../img/about-image1.png") no-repeat;
+  color: #fff;
+  line-height: 30px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#about .wrap .about-think .about-think-colone .think-two .layout {
+  position: absolute;
+  width: 330px;
+  height: 240px;
+  background-color: rgba(247, 139, 52, 0.5);
+}
+
+#about .wrap .about-think .about-think-colone .think-two .text {
+  position: absolute;
+  width: 300px;
+}
+
+#about .wrap .about-think .about-think-colone .think-two .caption {
+  margin-top: 130px;
+  padding-left: 40px;
+  font-family: "DroidSerifItalic";
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+
+#about .wrap .about-think .about-think-colone .think-two .desc {
+  padding-left: 40px;
+  width: 280px;
+  font-family: "robotoBlack";
+  font-size: 22px;
+}
+
+#about .wrap .about-think .about-think-colone .think-two .desc span {
+  opacity: 0;
+}
+
+#about .wrap .about-think .about-think-colone .think-two:hover .layout {
+  background-color: #f78b34;
+}
+
+#about .wrap .about-think .about-think-colone .think-two:hover .caption {
+  margin-top: 30px;
+}
+
+#about .wrap .about-think .about-think-colone .think-two:hover span {
+  opacity: 1;
+}
+
+#about .wrap .about-think .about-think-coltwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-one {
+  position: relative;
+  width: 330px;
+  height: 240px;
+  text-align: left;
+  background: url("../img/about-image3.png") no-repeat;
+  color: #fff;
+  line-height: 30px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-one .layout {
+  position: absolute;
+  width: 330px;
+  height: 240px;
+  background-color: rgba(124, 194, 77, 0.5);
+}
+
+#about .wrap .about-think .about-think-coltwo .think-one .text {
+  position: absolute;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-one .caption {
+  margin-top: 130px;
+  padding-left: 40px;
+  font-family: "DroidSerifItalic";
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-one .desc {
+  padding-left: 40px;
+  width: 300px;
+  font-family: "robotoBlack";
+  font-size: 22px;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-one .desc span {
+  opacity: 0;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-one:hover .layout {
+  background-color: #7cc24d;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-one:hover .caption {
+  margin-top: 30px;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-one:hover span {
+  opacity: 1;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-two {
+  position: relative;
+  width: 330px;
+  height: 240px;
+  text-align: left;
+  background: url("../img/about-image4.png") no-repeat;
+  color: #fff;
+  line-height: 30px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-two .layout {
+  position: absolute;
+  width: 330px;
+  height: 240px;
+  background-color: rgba(192, 30, 107, 0.5);
+}
+
+#about .wrap .about-think .about-think-coltwo .think-two .text {
+  position: absolute;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-two .caption {
+  margin-top: 130px;
+  padding-left: 40px;
+  font-family: "DroidSerifItalic";
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-two .desc {
+  padding-left: 40px;
+  width: 280px;
+  font-family: "robotoBlack";
+  font-size: 22px;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-two .desc span {
+  opacity: 0;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-two:hover .layout {
+  background-color: #c01e6b;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-two:hover .caption {
+  margin-top: 30px;
+}
+
+#about .wrap .about-think .about-think-coltwo .think-two:hover span {
+  opacity: 1;
+}
+
+#testimonials {
+  position: relative;
+  min-height: 355px;
+  background: url("../img/about-bg.png") no-repeat center 0/cover;
+}
+
+#testimonials .testimonials {
+  margin-top: 45px;
+  min-width: 1200px;
+  text-align: center;
+}
+
+#testimonials .testimonials h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-family: "robotoBold";
+  color: #0A3042;
+}
+
+#testimonials .testimonials small {
+  font-size: 22px;
+  font-family: "robotoLight";
+  color: #9A9A9A;
+}
+
+#testimonials #myCarousel {
+  width: 1200px;
+}
+
+#testimonials .carousel {
+  margin-top: 30px;
+}
+
+#testimonials .carousel .glyphicon-chevron-right:before {
+  content: "";
+  position: relative;
+  top: -10px;
+  background: url("../img/about-carousel-next.png") no-repeat 50% 50%;
+  width: 35px;
+  height: 70px;
+  display: block;
+}
+
+#testimonials .carousel .glyphicon-chevron-left:before {
+  content: "";
+  position: relative;
+  top: -10px;
+  background: url("../img/about-carousel-prev.png") no-repeat 50% 50%;
+  width: 35px;
+  height: 70px;
+  display: block;
+}
+
+#testimonials .carousel-inner {
+  width: 100%;
+  text-align: center;
+}
+
+#testimonials .carousel-inner h1 {
+  margin-bottom: 20px;
+  font-family: "DroidSerifItalic";
+  font-size: 24px;
+  color: #0A3042;
+}
+
+#testimonials .carousel-inner p {
+  font-family: "MontserratRegular";
+  font-size: 12px;
+  color: #75828F;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#testimonials .carousel-inner p span {
+  font-family: "MontserratBold";
+}
+
+#testimonials .carousel-control.left,
+#testimonials .carousel-control.right {
+  background-image: none;
+  opacity: 1;
+}
+
+#work {
+  position: relative;
+  height: 985px;
+  background-color: #0A3042;
+}
+
+#work .work {
+  min-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  height: 80px;
+  background-color: #7CC24D;
+}
+
+#work .work span {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#work .work h1 {
+  font-size: 6.5vmin;
+  font-family: "robotoLight";
+  color: #fff;
+}
+
+#work .serve h1 {
+  margin-top: 60px;
+  text-align: center;
+  font-family: "robotoBold";
+  font-size: 28px;
+  color: #fff;
+}
+
+#work .serve .wrapper {
+  width: 1200px;
+  border-bottom: 1px solid #2A4656;
+}
+
+#work .serve .serve-icons {
+  justify-content: space-between;
+  width: 1000px;
+  height: 250px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#work .serve .serve-icons .ico-one {
+  display: flex;
+}
+
+#work .serve .serve-icons .ico-one .image {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 25px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid #7CC24D;
+  border-radius: 50%;
+}
+
+#work .serve .serve-icons .ico-one .caption {
+  margin-left: 20px;
+  width: 215px;
+  color: #fff;
+}
+
+#work .serve .serve-icons .ico-one .caption h2 {
+  margin-bottom: 15px;
+  font-family: "RobotoRegular";
+  font-size: 20px;
+}
+
+#work .serve .serve-icons .ico-one .caption small {
+  font-family: "RobotoRegular";
+  font-size: 15px;
+  color: #B1B1B1;
+}
+
+#work .serve .serve-icons .ico-two {
+  display: flex;
+}
+
+#work .serve .serve-icons .ico-two .image {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 25px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid #7CC24D;
+  border-radius: 50%;
+}
+
+#work .serve .serve-icons .ico-two .caption {
+  margin-left: 20px;
+  width: 215px;
+  color: #fff;
+}
+
+#work .serve .serve-icons .ico-two .caption h2 {
+  margin-bottom: 15px;
+  font-family: "RobotoRegular";
+  font-size: 20px;
+}
+
+#work .serve .serve-icons .ico-two .caption small {
+  font-family: "RobotoRegular";
+  font-size: 15px;
+  color: #B1B1B1;
+}
+
+#work .serve .serve-icons .ico-three {
+  display: flex;
+}
+
+#work .serve .serve-icons .ico-three .image {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 25px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid #7CC24D;
+  border-radius: 50%;
+}
+
+#work .serve .serve-icons .ico-three .caption {
+  margin-left: 20px;
+  width: 215px;
+  color: #fff;
+}
+
+#work .serve .serve-icons .ico-three .caption h2 {
+  margin-bottom: 15px;
+  font-family: "RobotoRegular";
+  font-size: 20px;
+}
+
+#work .serve .serve-icons .ico-three .caption small {
+  font-family: "RobotoRegular";
+  font-size: 15px;
+  color: #B1B1B1;
+}
+
+#work .lifecycle p {
+  text-align: center;
+  font-family: "robotoLight";
+  font-size: 22px;
+  color: #B1B1B1;
+  line-height: 22px;
+}
+
+#work .lifecycle p:not(:last-child) {
+  padding-top: 25px;
+}
+
+#work .points {
+  justify-content: space-around;
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+
+#work .points h3 {
+  font-family: "RobotoRegular";
+  font-size: 20px;
+}
+
+#work .points .circle {
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 5px solid #0A3042;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#work .points .first-point {
+  flex-direction: column;
+  align-items: center;
+}
+
+#work .points .first-point h3 {
+  color: #00659F;
+}
+
+#work .points .first-point .circle {
+  background-color: #00659F;
+}
+
+#work .points .first-point .list {
+  margin-top: 30px;
+  font-family: "RobotoRegular";
+  font-size: 15px;
+  color: #B1B1B1;
+  text-align: center;
+}
+
+#work .points .first-point .list ul li {
+  margin-top: 15px;
+}
+
+#work .points .second-point {
+  flex-direction: column;
+  align-items: center;
+}
+
+#work .points .second-point h3 {
+  color: #C01E6B;
+}
+
+#work .points .second-point .circle {
+  background-color: #C01E6B;
+}
+
+#work .points .second-point .list {
+  margin-top: 30px;
+  font-family: "RobotoRegular";
+  font-size: 15px;
+  color: #B1B1B1;
+  text-align: center;
+}
+
+#work .points .second-point .list ul li {
+  margin-top: 15px;
+}
+
+#work .points .third-point {
+  flex-direction: column;
+  align-items: center;
+}
+
+#work .points .third-point h3 {
+  color: #F78B34;
+}
+
+#work .points .third-point .circle {
+  background-color: #F78B34;
+}
+
+#work .points .third-point .list {
+  margin-top: 30px;
+  font-family: "RobotoRegular";
+  font-size: 15px;
+  color: #B1B1B1;
+  text-align: center;
+}
+
+#work .points .third-point .list ul li {
+  margin-top: 15px;
+}
+
+#work .line {
+  position: absolute;
+  bottom: 188px;
+}
+
+#work .line span {
+  font-family: "robotoBold";
+  font-size: 14px;
+  color: #7CC24D;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#work .line span:not(:first-child):before {
+  content: '';
+  position: relative;
+  top: -2px;
+  width: 960px;
+  height: 4px;
+  background: url("../img/work-point-line.png") no-repeat;
+  display: inline-block;
+}
+
+#work .line .discovery {
+  margin-left: 0px;
+}
+
+#work .line .launch {
+  margin-left: 10px;
+}
+
+#work .line .launch:after {
+  content: '';
+  position: relative;
+  top: 3px;
+  left: 10px;
+  width: 23px;
+  height: 15px;
+  background: url("../img/work-arrow.png") no-repeat;
+  display: inline-block;
+}
+
+#research {
+  position: relative;
+  min-height: 750px;
+}
+
+#research .research {
+  justify-content: center;
+}
+
+#research .research h1 {
+  margin-top: 60px;
+  text-align: center;
+  font-family: "robotoLight";
+  font-size: 22px;
+  color: #BEBEBE;
+  line-height: 30px;
+}
+
+#research .qualitative {
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+#research .qualitative .qualitative-first {
+  flex-direction: column;
+  align-items: center;
+}
+
+#research .qualitative .qualitative-first h3 {
+  font-family: "robotoBold";
+  font-size: 24px;
+  color: #0A3042;
+}
+
+#research .qualitative .qualitative-first .list {
+  position: relative;
+  width: 360px;
+  height: 85px;
+  margin-top: 15px;
+  background-color: #C01E6B;
+  border-bottom: 5px solid #aa1b5f;
+  color: #fff;
+  cursor: pointer;
+}
+
+#research .qualitative .qualitative-first .list .caption-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+#research .qualitative .qualitative-first .list .plus {
+  position: relative;
+  top: 5px;
+  right: 30px;
+  background: url("../img/research-plus.png") no-repeat;
+  height: 23px;
+  width: 23px;
+}
+
+#research .qualitative .qualitative-first .list .minus {
+  position: relative;
+  top: 10px;
+  right: 30px;
+  background: url("../img/research-minus.png") no-repeat;
+  height: 23px;
+  width: 23px;
+}
+
+#research .qualitative .qualitative-first .list p {
+  position: relative;
+  top: 7px;
+  left: 30px;
+  font-family: "robotoBold";
+  font-size: 15px;
+  line-height: 8px;
+}
+
+#research .qualitative .qualitative-first .list-one .dropdown-list {
+  position: relative;
+  top: 5px;
+  height: 200px;
+  background-color: #aa1b5f;
+  color: #fff;
+  display: none;
+  z-index: 13;
+}
+
+#research .qualitative .qualitative-first .list-one .dropdown-list ul {
+  position: relative;
+  top: 30px;
+  left: 35px;
+  margin-left: 20px;
+  list-style: square;
+}
+
+#research .qualitative .qualitative-first .list-one .dropdown-list ul li {
+  padding-top: 10px;
+  font-family: "RobotoRegular";
+  font-size: 15px;
+}
+
+#research .qualitative .qualitative-first .list-two {
+  background-color: #7CC24D;
+  border-bottom: 5px solid #6fb73f;
+}
+
+#research .qualitative .qualitative-first .list-two .dropdown-list {
+  position: relative;
+  top: 5px;
+  height: 200px;
+  background-color: #6fb73f;
+  color: #fff;
+  display: none;
+  z-index: 12;
+}
+
+#research .qualitative .qualitative-first .list-two .dropdown-list ul {
+  position: relative;
+  top: 30px;
+  left: 35px;
+  margin-left: 20px;
+  list-style: square;
+}
+
+#research .qualitative .qualitative-first .list-two .dropdown-list ul li {
+  padding-top: 10px;
+  font-family: "RobotoRegular";
+  font-size: 15px;
+}
+
+#research .qualitative .qualitative-first .list-three {
+  background-color: #F78B34;
+  border-bottom: 5px solid #f67d1b;
+}
+
+#research .qualitative .qualitative-first .list-three .dropdown-list {
+  position: relative;
+  top: 5px;
+  height: 200px;
+  background-color: #f67d1b;
+  color: #fff;
+  display: none;
+  z-index: 11;
+}
+
+#research .qualitative .qualitative-first .list-three .dropdown-list ul {
+  position: relative;
+  top: 30px;
+  left: 35px;
+  margin-left: 20px;
+  list-style: square;
+}
+
+#research .qualitative .qualitative-first .list-three .dropdown-list ul li {
+  padding-top: 10px;
+  font-family: "RobotoRegular";
+  font-size: 15px;
+}
+
+#research .qualitative .qualitative-first .list-four {
+  background-color: #00659F;
+  border-bottom: 5px solid #005586;
+}
+
+#research .qualitative .qualitative-first .list-four .dropdown-list {
+  position: relative;
+  top: 5px;
+  height: 200px;
+  background-color: #005586;
+  color: #fff;
+  display: none;
+  z-index: 10;
+}
+
+#research .qualitative .qualitative-first .list-four .dropdown-list ul {
+  position: relative;
+  top: 30px;
+  left: 35px;
+  margin-left: 20px;
+  list-style: square;
+}
+
+#research .qualitative .qualitative-first .list-four .dropdown-list ul li {
+  padding-top: 10px;
+  font-family: "RobotoRegular";
+  font-size: 15px;
+}
+
+#map {
+  position: relative;
+  margin-top: 60px;
+  max-height: 800px;
+  background-color: #F4F4F4;
+  text-align: center;
+}
+
+#map .map-effective {
+  position: relative;
+  z-index: 10;
+  padding-top: 60px;
+}
+
+#map .map-effective h1 {
+  text-align: center;
+  font-family: "robotoBold";
+  font-size: 28px;
+  color: #0A3042;
+}
+
+#map .map {
+  justify-content: center;
+  position: relative;
+  bottom: 110px;
+}
+
+#map .map img {
+  max-width: 100%;
+}
+
+#map .map-footer {
+  position: relative;
+  margin-top: -190px;
+  text-align: center;
+}
+
+#map .map-footer p {
+  padding-bottom: 60px;
+  font-family: "RobotoRegular";
+  font-size: 15px;
+  color: #9E9E9E;
+}
+
+#team {
+  position: relative;
+  min-height: 800px;
+  margin-top: 100px;
+}
+
+#team .team {
+  min-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  height: 80px;
+  background-color: #43C6F4;
+}
+
+#team .team span {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#team .team h1 {
+  font-size: 6.5vmin;
+  font-family: "robotoLight";
+  color: #fff;
+}
+
+#team .header-caption {
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#team .header-caption h2 {
+  width: 780px;
+  text-align: center;
+  font-family: "robotoLight";
+  font-size: 22px;
+  color: #9A9A9A;
+  line-height: 32px;
+}
+
+#team .worker {
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+#team .worker .worker-data {
+  margin-right: 30px;
+  max-width: 840px;
+}
+
+#team .worker .worker-data .worker-header {
+  justify-content: space-between;
+  border-bottom: 1px solid #DADADA;
+}
+
+#team .worker .worker-data .worker-header .worker-name h2 {
+  margin-top: 30px;
+  font-family: "DroidSerifItalic";
+  font-size: 24px;
+  color: #333333;
+}
+
+#team .worker .worker-data .worker-header .worker-name h1 {
+  position: relative;
+  bottom: 15px;
+  font-family: "MontserratSemiBold";
+  font-size: 28px;
+  color: #384E5A;
+}
+
+#team .worker .worker-data .worker-header .worker-name small {
+  position: relative;
+  bottom: 20px;
+  font-family: "MontserratBold";
+  font-size: 12px;
+  color: #F78B34;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#team .worker .worker-data .worker-header .worker-name small span {
+  padding: 0 5px;
+  color: #D1D1D1;
+}
+
+#team .worker .worker-data .worker-header .connect {
+  align-items: center;
+  position: relative;
+  top: 20px;
+}
+
+#team .worker .worker-data .worker-header .connect small {
+  margin-right: 15px;
+  font-family: "MontserratBold";
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#team .worker .worker-data .worker-header .connect small a {
+  color: #989898;
+  transition: all 0.2s ease;
+}
+
+#team .worker .worker-data .worker-header .connect small a:hover {
+  color: #43C6F4;
+  text-decoration: none;
+}
+
+#team .worker .worker-data .worker-header .connect i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-size: 26px;
+  background-color: #0C87CA;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#team .worker .worker-data .worker-header .connect a:hover {
+  text-decoration: none;
+}
+
+#team .worker .worker-data .worker-caption {
+  margin-top: 20px;
+}
+
+#team .worker .worker-data .worker-caption p {
+  font-family: "RobotoRegular";
+  font-size: 15px;
+  color: #999999;
+}
+
+#team .worker .worker-data .worker-caption a {
+  color: #43C6F4;
+}
+
+#team .worker .worker-data .worker-caption a button {
+  margin-top: 20px;
+  height: 40px;
+  width: 170px;
+  background-color: #fff;
+  border: 2px solid #43C6F4;
+  border-radius: 25px;
+  font-family: "MontserratBold";
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  letter-spacing: 3px;
+  outline: none;
+}
+
+#team .worker .worker-data .worker-caption a:hover {
+  color: #fff;
+}
+
+#team .worker .worker-data .worker-caption a:hover button {
+  background-color: #43C6F4;
+}
+
+#contact {
+  position: relative;
+  min-height: 500px;
+}
+
+#contact .contact {
+  min-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  height: 80px;
+  background-color: #C01E6B;
+}
+
+#contact .contact span {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#contact .contact h1 {
+  font-size: 6.5vmin;
+  font-family: "robotoLight";
+  color: #fff;
+}
+
+#contact .form {
+  min-height: 430px;
+  background-color: #0A3042;
+}
+
+#contact .form-main {
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+#contact .form-main .form-caption {
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#contact .form-main .form-caption .caption-one {
+  position: relative;
+}
+
+#contact .form-main .form-caption .caption-one h2 {
+  font-family: "robotoBold";
+  font-size: 28px;
+  color: #fff;
+}
+
+#contact .form-main .form-caption .caption-two {
+  margin-top: 25px;
+}
+
+#contact .form-main .form-caption .caption-two small {
+  font-family: "MontserratBold";
+  font-size: 12px;
+  color: #989898;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#contact .form-main .form-caption .caption-two h1 {
+  position: relative;
+  top: -15px;
+  font-family: "robotoBold";
+  font-size: 32px;
+  color: #FFC325;
+}
+
+#contact .form-main .form-caption .caption-three {
+  width: 310px;
+}
+
+#contact .form-main .form-caption .caption-three p {
+  font-family: "RobotoRegular";
+  font-size: 15px;
+  color: #989898;
+}
+
+#contact .form-main .form-send {
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-right: 100px;
+  min-height: 260px;
+  min-width: 495px;
+}
+
+#contact .form-main .form-send .form-header input[type="text"] {
+  height: 45px;
+  width: 235px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-family: "RobotoRegular";
+  font-size: 15px;
+  color: #ABAFB2;
+  outline: none;
+}
+
+#contact .form-main .form-send .form-header ::-webkit-input-placeholder {
+  color: #B6BABD;
+}
+
+#contact .form-main .form-send .form-header input:first-child {
+  margin-right: 10px;
+}
+
+#contact .form-main .form-send .form-message {
+  position: relative;
+  top: 15px;
+}
+
+#contact .form-main .form-send .form-message textarea {
+  height: 180px;
+  width: 480px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-family: "RobotoRegular";
+  font-size: 15px;
+  color: #B6BABD;
+  resize: none;
+  outline: none;
+}
+
+#contact .form-main .form-send .form-message ::-webkit-input-placeholder {
+  color: #B6BABD;
+}
+
+#contact .form-main .form-send .form-button a {
+  color: #FFC325;
+}
+
+#contact .form-main .form-send .form-button a button {
+  margin-top: 25px;
+  height: 40px;
+  width: 160px;
+  background-color: transparent;
+  border: 2px solid #FFC325;
+  border-radius: 25px;
+  font-family: "MontserratBold";
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  letter-spacing: 3px;
+  outline: none;
+}
+
+#contact .form-main .form-send .form-button a:hover {
+  color: #fff;
+}
+
+#contact .form-main .form-send .form-button a:hover button {
+  background-color: #FFC325;
+}
+
+#footer {
+  position: relative;
+  top: 60px;
+  min-height: 250px;
+}
+
+#footer .footer {
+  justify-content: space-between;
+  height: 150px;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+#footer .footer .footer-nav ul li {
+  margin-top: -10px;
+  border-top: 3px solid transparent;
+  font-family: "MontserratSemiBold";
+  font-size: 12px;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#footer .footer .footer-nav ul li a {
+  padding-top: 18px;
+  color: #0A3042;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+#footer .footer .footer-nav ul li a:hover {
+  color: #43C6F4;
+}
+
+#footer .footer .footer-nav ul li i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -15px;
+  right: 45px;
+  width: 45px;
+  height: 45px;
+  font-size: 26px;
+  background-color: #0C87CA;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#footer .footer .footer-nav ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+#footer p {
+  margin-top: 40px;
+  text-align: center;
+  font-family: "RobotoRegular";
+  font-size: 15px;
+  color: #D3D3D3;
+}

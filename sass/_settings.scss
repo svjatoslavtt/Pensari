@@ -1,0 +1,36 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.main-wrapper {
+	overflow-x: hidden;
+}
+
+%flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+%ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	margin: 0 auto;
+}
+
+::selection {
+	background: #444444;
+}

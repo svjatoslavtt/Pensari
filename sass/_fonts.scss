@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'DroidSerifItalic';
+  src: url('fonts/DroidSerifItalic.eot');
+  src: url('fonts/DroidSerifItalic.eot') format('embedded-opentype'),
+       url('fonts/DroidSerifItalic.woff2') format('woff2'),
+       url('fonts/DroidSerifItalic.woff') format('woff'),
+       url('fonts/DroidSerifItalic.ttf') format('truetype'),
+       url('fonts/DroidSerifItalic.svg#DroidSerifItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'DroidSerifRegular';
+    src: url('fonts/DroidSerifRegular.eot');
+    src: url('fonts/DroidSerifRegular.eot') format('embedded-opentype'),
+         url('fonts/DroidSerifRegular.woff2') format('woff2'),
+         url('fonts/DroidSerifRegular.woff') format('woff'),
+         url('fonts/DroidSerifRegular.ttf') format('truetype'),
+         url('fonts/DroidSerifRegular.svg#DroidSerifRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url('fonts/MontserratRegular.eot');
+  src: url('fonts/MontserratRegular.eot') format('embedded-opentype'),
+       url('fonts/MontserratRegular.woff2') format('woff2'),
+       url('fonts/MontserratRegular.woff') format('woff'),
+       url('fonts/MontserratRegular.ttf') format('truetype'),
+       url('fonts/MontserratRegular.svg#MontserratRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'MontserratBold';
+  src: url('fonts/MontserratBold.eot');
+  src: url('fonts/MontserratBold.eot') format('embedded-opentype'),
+       url('fonts/MontserratBold.woff2') format('woff2'),
+       url('fonts/MontserratBold.woff') format('woff'),
+       url('fonts/MontserratBold.ttf') format('truetype'),
+       url('fonts/MontserratBold.svg#MontserratBold') format('svg');
+}
+
+@font-face {
+  font-family: 'MontserratSemiBold';
+  src: url('fonts/MontserratSemiBold.eot');
+  src: url('fonts/MontserratSemiBold.eot') format('embedded-opentype'),
+       url('fonts/MontserratSemiBold.woff2') format('woff2'),
+       url('fonts/MontserratSemiBold.woff') format('woff'),
+       url('fonts/MontserratSemiBold.ttf') format('truetype'),
+       url('fonts/MontserratSemiBold.svg#MontserratSemiBold') format('svg');
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('fonts/RobotoRegular.eot');
+  src: url('fonts/RobotoRegular.eot') format('embedded-opentype'),
+       url('fonts/RobotoRegular.woff2') format('woff2'),
+       url('fonts/RobotoRegular.woff') format('woff'),
+       url('fonts/RobotoRegular.ttf') format('truetype'),
+       url('fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'robotoBlack';
+    src: url('fonts/robotoBlack.eot');
+    src: url('fonts/robotoBlack.eot') format('embedded-opentype'),
+         url('fonts/robotoBlack.woff2') format('woff2'),
+         url('fonts/robotoBlack.woff') format('woff'),
+         url('fonts/robotoBlack.ttf') format('truetype'),
+         url('fonts/robotoBlack.svg#robotoBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'robotoBold';
+    src: url('fonts/robotoBold.eot');
+    src: url('fonts/robotoBold.eot') format('embedded-opentype'),
+         url('fonts/robotoBold.woff2') format('woff2'),
+         url('fonts/robotoBold.woff') format('woff'),
+         url('fonts/robotoBold.ttf') format('truetype'),
+         url('fonts/robotoBold.svg#robotoBold') format('svg');
+}
+
+@font-face {
+    font-family: 'robotoLight';
+    src: url('fonts/robotoLight.eot');
+    src: url('fonts/robotoLight.eot') format('embedded-opentype'),
+         url('fonts/robotoLight.woff2') format('woff2'),
+         url('fonts/robotoLight.woff') format('woff'),
+         url('fonts/robotoLight.ttf') format('truetype'),
+         url('fonts/robotoLight.svg#robotoLight') format('svg');
+}
+
+@font-face {
+    font-family: 'robotoMedium';
+    src: url('fonts/robotoMedium.eot');
+    src: url('fonts/robotoMedium.eot') format('embedded-opentype'),
+         url('fonts/robotoMedium.woff2') format('woff2'),
+         url('fonts/robotoMedium.woff') format('woff'),
+         url('fonts/robotoMedium.ttf') format('truetype'),
+         url('fonts/robotoMedium.svg#robotoMedium') format('svg');
+}
+
+/*--- variables ---*/
+$drSrIt: 'DroidSerifItalic';
+$drSrRg: 'DroidSerifRegular';
+
+$mntRg: 'MontserratRegular';
+$mntBd: 'MontserratBold';
+$mntSmBd: 'MontserratSemiBold';
+
+$robMed: 'robotoMedium';
+$robRg: 'RobotoRegular';
+$robBl: 'robotoBlack';
+$robBd: 'robotoBold';
+$robLt: 'robotoLight';
