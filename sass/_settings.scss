@@ -6,11 +6,11 @@ html, body {
 }
 
 body {
-	overflow-x: hidden;
+	// overflow-x: hidden;
 }
 
 .main-wrapper {
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 %flex {
@@ -25,10 +25,10 @@ body {
 }
 
 .wrap {
-	max-width: 1200px;
+	max-width: 1255px;
 	margin: 0 auto;
+	padding: 0 2%;
 	position: relative;
-	margin: 0 auto;
 }
 
 ::selection {

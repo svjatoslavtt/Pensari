@@ -1,0 +1,164 @@
+@media screen and (max-width: 1245px) {
+
+	#about {
+
+		.wrap {
+			display: flex;
+			justify-content: center;
+
+			.about-text {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+
+	#work {
+
+		.line {
+			visibility: hidden;
+		}
+	}
+
+	#team {
+
+		.worker {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	#contact {
+
+		.form-main {
+			display: flex;
+			justify-content: space-around;
+
+			.form-send {
+				margin-right: 0px;
+
+				.form-header {
+					display: flex;
+					flex-direction: row;
+
+					input[type="text"] {
+						height: 45px;
+						width: 235px;
+						margin-top: 0px;
+						padding: 0 20px;
+						border: 1px solid transparent;
+						border-radius: 5px;
+						font-family: $robRg;
+						font-size: 15px;
+						color: #ABAFB2;
+						outline: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 705px) {
+
+	#header {
+
+		.header-content {
+
+			.header-content-contact {
+
+				a {
+
+					span {
+						width: 350px;
+
+						&:after {
+							right: 10px;
+						}
+
+						&:hover {
+
+							&:after {
+								right: -2px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#about {
+		
+		.wrap {
+
+			.about-think {
+				width: 340px;
+
+				.about-think-coltwo {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+
+	#contact {
+
+		.form-main {
+			display: flex;
+			justify-content: center;
+
+			.form-send {
+				margin-right: 0px;
+
+				.form-header {
+					display: flex;
+					flex-direction: column;
+
+					input[type="text"] {
+						width: 100%;
+						margin-top: 15px;
+					}
+				}
+
+				.form-message {
+					
+					textarea {
+						width: 350px;
+					}
+				}
+			}
+		}
+	}
+
+	#footer {
+
+		.footer-nav {
+			display: block;
+
+			li {
+				line-height: 45px;
+
+				i {
+					top: 0px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 485px) {
+	#team {
+
+		.worker {
+
+			.worker-header {
+
+				.connect {
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+}
+

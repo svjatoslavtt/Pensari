@@ -66,24 +66,20 @@ html, body {
   min-height: 100%;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .main-wrapper {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-#header .header-top, #header .header-top .header-nav ul, #header .header-content, #about .wrap, #about .wrap .about-text, #about .wrap .about-think, #work .serve .serve-icons, #work .serve .serve-icons .ico-one .image, #work .serve .serve-icons .ico-two .image, #work .serve .serve-icons .ico-three .image, #work .points, #work .points .first-point, #work .points .second-point, #work .points .third-point, #research .research, #research .qualitative, #research .qualitative .qualitative-first, #team .header-caption, #team .worker, #team .worker .worker-data .worker-header, #team .worker .worker-data .worker-header .connect, #contact .form-main, #contact .form-main .form-caption, #contact .form-main .form-send, #contact .form-main .form-send .form-header, #footer .footer, #footer .footer .footer-nav ul {
+#header .header-top, #header nav ul, #header .header-content, #about .wrap, #about .wrap .about-text, #about .wrap .about-think, #work .serve .wrapper, #work .serve .serve-icons, #work .serve .serve-icons .ico-one .image, #work .serve .serve-icons .ico-two .image, #work .serve .serve-icons .ico-three .image, #work .points, #work .points .first-point, #work .points .second-point, #work .points .third-point, #research .research, #research .qualitative, #research .qualitative .qualitative-first, #team .header-caption, #team .worker, #team .worker .worker-data .worker-header, #team .worker .worker-data .worker-header .connect, #contact .form-main, #contact .form-main .form-caption, #contact .form-main .form-send, #contact .form-main .form-send .form-header, #footer .footer, #footer .footer .footer-nav ul {
   display: flex;
   flex-wrap: wrap;
 }
 
 .wrap {
-  max-width: 1200px;
+  max-width: 1255px;
   margin: 0 auto;
+  padding: 0 2%;
   position: relative;
-  margin: 0 auto;
 }
 
 ::selection {
@@ -94,8 +90,13 @@ body {
   position: relative;
   height: 100vh;
   min-height: 670px;
-  background: url("/img/header.png") no-repeat center 0/cover;
+  background: url("../img/header.png") no-repeat center 0/cover;
   box-sizing: content-box;
+}
+
+#header .navBar {
+  position: relative;
+  min-width: 100%;
 }
 
 #header .header-top {
@@ -103,7 +104,21 @@ body {
   padding-top: 25px;
 }
 
-#header .header-top .header-nav ul li {
+#header .logo {
+  border-radius: 50px;
+  display: inline-block;
+  height: 45px;
+  margin: 1em 0;
+  width: 45px;
+}
+
+#header nav ul a {
+  padding-top: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#header nav li {
   padding-top: 18px;
   border-top: 3px solid transparent;
   font-family: "MontserratRegular";
@@ -113,34 +128,91 @@ body {
   letter-spacing: 2px;
 }
 
-#header .header-top .header-nav ul li a {
-  padding-top: 18px;
-  color: #fff;
-  text-decoration: none;
-}
-
-#header .header-top .header-nav ul li:not(:last-child) {
+#header nav li:not(:last-child) {
   margin-right: 60px;
 }
 
-#header .header-top .header-nav ul .header-home:hover {
+#header nav .header-home:hover {
   border-top: 3px solid #00659F;
 }
 
-#header .header-top .header-nav ul .header-about:hover {
+#header nav .header-about:hover {
   border-top: 3px solid #F78B34;
 }
 
-#header .header-top .header-nav ul .header-work:hover {
+#header nav .header-work:hover {
   border-top: 3px solid #7CC24D;
 }
 
-#header .header-top .header-nav ul .header-team:hover {
+#header nav .header-team:hover {
   border-top: 3px solid #43C6F4;
 }
 
-#header .header-top .header-nav ul .header-contact:hover {
+#header nav .header-contact:hover {
   border-top: 3px solid #C01E6B;
+}
+
+#header nav #menu-toggle {
+  display: none;
+}
+
+#header nav .label-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  #header nav nav ul a {
+    color: #fff;
+  }
+  #header nav ul {
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    visibility: hidden;
+    transition: all 0.1s ease;
+    position: absolute;
+    margin-top: 90px;
+  }
+  #header nav li {
+    border: 3px solid transparent;
+    display: block;
+    font-size: 15px;
+    padding: 1.5em 0;
+    margin-left: 0px;
+    background-color: #00659F;
+    width: 96%;
+  }
+  #header nav .header-list:hover {
+    background-color: #0075B8;
+    border: 3px solid #00659F;
+  }
+  #header nav li:first-child {
+    border-radius: 5px 5px 0 0;
+  }
+  #header nav li:last-child {
+    border-radius: 0 0 5px 5px;
+    margin-right: 60px;
+  }
+  #header nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 0;
+    visibility: visible;
+  }
+  #header nav .label-toggle {
+    background: linear-gradient(to bottom, #43C6F4 0%, #43C6F4 20%, transparent 20%, transparent 40%, #F78B34 40%, #F78B34 60%, transparent 60%, transparent 80%, #C01E6B 80%, #C01E6B 100%);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 35px;
+    margin-top: 30px;
+    width: 35px;
+  }
+  #header nav .wrap {
+    display: block;
+  }
 }
 
 #header .header-content {
@@ -168,18 +240,18 @@ body {
 #header .header-content .text-third {
   margin-top: 45px;
   margin-bottom: 35px;
-  width: 515px;
-  font-size: 2.6vmin;
+  max-width: 515px;
+  font-size: 17px;
   font-family: "robotoLight";
   color: #fff;
   line-height: 20px;
 }
 
 #header .header-content .header-content-contact {
-  width: 500px;
+  max-width: 500px;
   padding-top: 20px;
   border-top: 3px solid #FFC325;
-  font-size: 2.2vmin;
+  font-size: 12px;
   font-family: "MontserratBold";
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -200,8 +272,8 @@ body {
 #header .header-content .header-content-contact a span:after {
   content: '';
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -2px;
+  right: 0px;
   width: 20px;
   height: 20px;
   display: inline-block;
@@ -224,7 +296,7 @@ body {
 }
 
 #about .about {
-  min-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   height: 80px;
@@ -232,12 +304,13 @@ body {
 }
 
 #about .about span {
-  width: 1200px;
+  width: 1250px;
   margin: 0 auto;
+  padding: 0 2%;
 }
 
 #about .about h1 {
-  font-size: 6.5vmin;
+  font-size: 42px;
   font-family: "robotoLight";
   color: #fff;
 }
@@ -251,7 +324,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 442px;
-  height: 260px;
+  min-height: 260px;
+  height: 100%;
 }
 
 #about .wrap .about-text .text-first {
@@ -522,7 +596,7 @@ body {
 
 #testimonials .testimonials {
   margin-top: 45px;
-  min-width: 1200px;
+  width: 1200px;
   text-align: center;
 }
 
@@ -575,13 +649,14 @@ body {
 #testimonials .carousel-inner h1 {
   margin-bottom: 20px;
   font-family: "DroidSerifItalic";
-  font-size: 24px;
+  font-size: 4vmin;
   color: #0A3042;
+  line-height: 35px;
 }
 
 #testimonials .carousel-inner p {
   font-family: "MontserratRegular";
-  font-size: 12px;
+  font-size: 2vmin;
   color: #75828F;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -599,12 +674,12 @@ body {
 
 #work {
   position: relative;
-  height: 985px;
+  min-height: 985px;
   background-color: #0A3042;
 }
 
 #work .work {
-  min-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   height: 80px;
@@ -612,12 +687,13 @@ body {
 }
 
 #work .work span {
-  width: 1200px;
+  width: 1250px;
   margin: 0 auto;
+  padding: 0 2%;
 }
 
 #work .work h1 {
-  font-size: 6.5vmin;
+  font-size: 42px;
   font-family: "robotoLight";
   color: #fff;
 }
@@ -631,16 +707,21 @@ body {
 }
 
 #work .serve .wrapper {
-  width: 1200px;
+  max-width: 1200px;
+  min-height: 180px;
   border-bottom: 1px solid #2A4656;
 }
 
 #work .serve .serve-icons {
-  justify-content: space-between;
-  width: 1000px;
-  height: 250px;
+  justify-content: center;
+  max-width: 1200px;
+  min-height: 250px;
   margin: 0 auto;
   padding-top: 30px;
+}
+
+#work .serve .serve-icons .ico {
+  margin: 20px 20px;
 }
 
 #work .serve .serve-icons .ico-one {
@@ -756,7 +837,7 @@ body {
 
 #work .points {
   justify-content: space-around;
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
   padding-top: 35px;
 }
@@ -774,6 +855,11 @@ body {
   border: 5px solid #0A3042;
   border-radius: 50%;
   z-index: 1;
+}
+
+#work .points .point {
+  display: flex;
+  flex-basis: 250px;
 }
 
 #work .points .first-point {
@@ -829,6 +915,7 @@ body {
 #work .points .third-point {
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 #work .points .third-point h3 {
@@ -979,7 +1066,7 @@ body {
   background-color: #aa1b5f;
   color: #fff;
   display: none;
-  z-index: 13;
+  z-index: 14;
 }
 
 #research .qualitative .qualitative-first .list-one .dropdown-list ul {
@@ -1008,7 +1095,7 @@ body {
   background-color: #6fb73f;
   color: #fff;
   display: none;
-  z-index: 12;
+  z-index: 13;
 }
 
 #research .qualitative .qualitative-first .list-two .dropdown-list ul {
@@ -1037,7 +1124,7 @@ body {
   background-color: #f67d1b;
   color: #fff;
   display: none;
-  z-index: 11;
+  z-index: 12;
 }
 
 #research .qualitative .qualitative-first .list-three .dropdown-list ul {
@@ -1066,7 +1153,7 @@ body {
   background-color: #005586;
   color: #fff;
   display: none;
-  z-index: 10;
+  z-index: 11;
 }
 
 #research .qualitative .qualitative-first .list-four .dropdown-list ul {
@@ -1100,7 +1187,7 @@ body {
 #map .map-effective h1 {
   text-align: center;
   font-family: "robotoBold";
-  font-size: 28px;
+  font-size: 4.3vmin;
   color: #0A3042;
 }
 
@@ -1134,7 +1221,7 @@ body {
 }
 
 #team .team {
-  min-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   height: 80px;
@@ -1142,12 +1229,13 @@ body {
 }
 
 #team .team span {
-  width: 1200px;
+  width: 1250px;
   margin: 0 auto;
+  padding: 0 2%;
 }
 
 #team .team h1 {
-  font-size: 6.5vmin;
+  font-size: 42px;
   font-family: "robotoLight";
   color: #fff;
 }
@@ -1180,6 +1268,10 @@ body {
 #team .worker .worker-data .worker-header {
   justify-content: space-between;
   border-bottom: 1px solid #DADADA;
+}
+
+#team .worker .worker-data .worker-header .worker-name {
+  min-height: 140px;
 }
 
 #team .worker .worker-data .worker-header .worker-name h2 {
@@ -1269,8 +1361,8 @@ body {
 
 #team .worker .worker-data .worker-caption a button {
   margin-top: 20px;
-  height: 40px;
-  width: 170px;
+  min-height: 40px;
+  min-width: 170px;
   background-color: #fff;
   border: 2px solid #43C6F4;
   border-radius: 25px;
@@ -1296,7 +1388,7 @@ body {
 }
 
 #contact .contact {
-  min-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   height: 80px;
@@ -1304,13 +1396,14 @@ body {
 }
 
 #contact .contact span {
-  width: 1200px;
+  width: 1250px;
   margin: 0 auto;
+  padding: 0 2%;
 }
 
 #contact .contact h1 {
-  font-size: 6.5vmin;
-  font-family: "robotoLight";
+  font-size: 42px;
+  font-family: #C01E6B;
   color: #fff;
 }
 
@@ -1356,7 +1449,11 @@ body {
   top: -15px;
   font-family: "robotoBold";
   font-size: 32px;
+}
+
+#contact .form-main .form-caption .caption-two h1 a {
   color: #FFC325;
+  text-decoration: none;
 }
 
 #contact .form-main .form-caption .caption-three {
@@ -1375,7 +1472,10 @@ body {
   margin-top: 50px;
   margin-right: 100px;
   min-height: 260px;
-  min-width: 495px;
+}
+
+#contact .form-main .form-send .form-header {
+  box-sizing: border-box;
 }
 
 #contact .form-main .form-send .form-header input[type="text"] {
@@ -1399,6 +1499,7 @@ body {
 }
 
 #contact .form-main .form-send .form-message {
+  box-sizing: border-box;
   position: relative;
   top: 15px;
 }
@@ -1426,8 +1527,9 @@ body {
 
 #contact .form-main .form-send .form-button a button {
   margin-top: 25px;
-  height: 40px;
-  width: 160px;
+  margin-bottom: 35px;
+  min-height: 40px;
+  min-width: 160px;
   background-color: transparent;
   border: 2px solid #FFC325;
   border-radius: 25px;
@@ -1450,17 +1552,19 @@ body {
 #footer {
   position: relative;
   top: 60px;
-  min-height: 250px;
+  min-height: 300px;
 }
 
 #footer .footer {
   justify-content: space-between;
-  height: 150px;
+  min-height: 150px;
   border-bottom: 1px solid #E3E3E3;
 }
 
 #footer .footer .footer-nav ul li {
+  position: relative;
   margin-top: -10px;
+  margin-right: 60px;
   border-top: 3px solid transparent;
   font-family: "MontserratSemiBold";
   font-size: 12px;
@@ -1484,9 +1588,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   top: -15px;
-  right: 45px;
+  right: -55px;
   width: 45px;
   height: 45px;
   font-size: 26px;
@@ -1496,14 +1600,102 @@ body {
   cursor: pointer;
 }
 
-#footer .footer .footer-nav ul li:not(:last-child) {
-  margin-right: 60px;
-}
-
 #footer p {
   margin-top: 40px;
   text-align: center;
   font-family: "RobotoRegular";
   font-size: 15px;
   color: #D3D3D3;
+}
+
+@media screen and (max-width: 1245px) {
+  #about .wrap {
+    display: flex;
+    justify-content: center;
+  }
+  #about .wrap .about-text {
+    display: flex;
+    justify-content: center;
+  }
+  #work .line {
+    visibility: hidden;
+  }
+  #team .worker {
+    display: flex;
+    justify-content: center;
+  }
+  #contact .form-main {
+    display: flex;
+    justify-content: space-around;
+  }
+  #contact .form-main .form-send {
+    margin-right: 0px;
+  }
+  #contact .form-main .form-send .form-header {
+    display: flex;
+    flex-direction: row;
+  }
+  #contact .form-main .form-send .form-header input[type="text"] {
+    height: 45px;
+    width: 235px;
+    margin-top: 0px;
+    padding: 0 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: "RobotoRegular";
+    font-size: 15px;
+    color: #ABAFB2;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  #header .header-content .header-content-contact a span {
+    width: 350px;
+  }
+  #header .header-content .header-content-contact a span:after {
+    right: 10px;
+  }
+  #header .header-content .header-content-contact a span:hover:after {
+    right: -2px;
+  }
+  #about .wrap .about-think {
+    width: 340px;
+  }
+  #about .wrap .about-think .about-think-coltwo {
+    margin-top: 20px;
+  }
+  #contact .form-main {
+    display: flex;
+    justify-content: center;
+  }
+  #contact .form-main .form-send {
+    margin-right: 0px;
+  }
+  #contact .form-main .form-send .form-header {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .form-main .form-send .form-header input[type="text"] {
+    width: 100%;
+    margin-top: 15px;
+  }
+  #contact .form-main .form-send .form-message textarea {
+    width: 350px;
+  }
+  #footer .footer-nav {
+    display: block;
+  }
+  #footer .footer-nav li {
+    line-height: 45px;
+  }
+  #footer .footer-nav li i {
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #team .worker .worker-header .connect {
+    margin-bottom: 40px;
+  }
 }

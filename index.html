@@ -8,70 +8,79 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+
 </head>
 <body>
 
+<div class="main-wrapper">
+
 	<section id="header">
 
-		<div class="wrap">
+		<nav class="navBar">
+			
+			<nav class="wrap">
 
-			<div class="header-top">
+				<div class="header-top">
 
-				<div class="logo">
-					<a href="#">
-						<img src="img/header-logo.png" alt="Pensari">
-					</a>
-				</div>
+					<div class="logo">
+						<a href="#">
+							<img src="img/header-logo.png" alt="Pensari">
+						</a>
+					</div>
 
-				<div class="header-nav">
+					<input type="checkbox" id="menu-toggle">
+						<label for="menu-toggle" class="label-toggle"></label>
+					</input>
 
 					<ul>
-						<li class="header-home">
+						<li class="header-home header-list">
 							<a href="#">home</a>
 						</li>
-						<li class="header-about">
+						<li class="header-about header-list">
 							<a href="#">about</a>
 						</li>
-						<li class="header-work">
+						<li class="header-work header-list">
 							<a href="#">our work</a>
 						</li>
-						<li class="header-team">
+						<li class="header-team header-list">
 							<a href="#">our team</a>
 						</li>
-						<li class="header-contact">
+						<li class="header-contact header-list">
 							<a href="#">contact us</a>
 						</li>
 					</ul>
 
 				</div>
 
-			</div>
+				<div class="header-content">
 
-			<div class="header-content">
+					<div class="header-text">
 
-				<div class="header-text">
+						<div class="text-first">
+							pensar (<span>n.</span>):
+						</div>
 
-					<div class="text-first">
-						pensar (<span>n.</span>):
-					</div>
-					<div class="text-second">
-						<span>to think.</span>
-					</div>
-					<div class="text-third">
-						<span>Pensari delivers market research solutions exclusively for health care sector clients.  Our consultants think carefully about your decisions from the start of our engagement through delivery of findings.</span>
-					</div>
+						<div class="text-second">
+							<span>to think.</span>
+						</div>
 
-					<div class="header-content-contact">
-						<a href="#">
-							<span>contact us today to learn more</span>
-						</a>
+						<div class="text-third">
+							<span>Pensari delivers market research solutions exclusively for health care sector clients.  Our consultants think carefully about your decisions from the start of our engagement through delivery of findings.</span>
+						</div>
+
+						<div class="header-content-contact">
+							<a href="javascript:void(0)">
+								<span>contact us today to learn more</span>
+							</a>
+						</div>
+
 					</div>
 
 				</div>
 
-			</div>
+			</nav>
 
-		</div>
+		</nav>
 
 	</section>
 
@@ -99,6 +108,7 @@
 				<div class="text-third">
 					<p>We pride ourselves on being thoughtful about your products, your objectives, your research implementation, and delivery of findings, resulting in consistent, high quality research and insights.</p>
 				</div>
+
 			</div>
 
 			<div class="about-think">
@@ -183,7 +193,7 @@
 						<span class="sr-only">Next</span>
 					</a>
 					<!-- Right indicator -->
-					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 						<span class="sr-only">Prev</span>
 					</a>
@@ -215,7 +225,7 @@
 					
 					<div class="serve-icons">
 
-						<div class="ico-one">
+						<div class="ico-one ico">
 
 							<div class="image">
 								<img src="img/work-ico-one.png" alt="Pharmaceuticals">
@@ -228,7 +238,7 @@
 
 						</div>
 
-						<div class="ico-two">
+						<div class="ico-two ico">
 							
 							<div class="image">
 								<img src="img/work-ico-two.png" alt="Biotechnology">
@@ -241,7 +251,7 @@
 
 						</div>
 
-						<div class="ico-three">
+						<div class="ico-three ico">
 
 							<div class="image">
 								<img src="img/work-ico-three.png" alt="Medical">
@@ -271,7 +281,7 @@
 
 				<div class="points">
 					
-					<div class="first-point">
+					<div class="first-point point">
 						
 						<h3>Knowledge Building</h3>
 						<div class="circle"></div>
@@ -285,7 +295,7 @@
 
 					</div>
 
-					<div class="second-point">
+					<div class="second-point point">
 						
 						<h3>Demand Estimating</h3>
 						<div class="circle"></div>
@@ -299,7 +309,7 @@
 
 					</div>
 
-					<div class="third-point">
+					<div class="third-point point">
 						
 						<h3>Pre-Launch</h3>
 						<div class="circle"></div>
@@ -318,11 +328,11 @@
 
 				<div class="line">
 
-						<span class="discovery">discovery</span>
-						
-						<span class="launch">post launch</span>
+					<span class="discovery">discovery</span>
+					
+					<span class="launch">post launch</span>
 
-					</div>
+				</div>
 
 			</div>
 
@@ -626,7 +636,7 @@
 		
 		<div class="contact">
 			<span>
-				<h1>Contuct Us</h1>
+				<h1>Contact Us</h1>
 			</span>
 		</div>
 
@@ -643,7 +653,9 @@
 
 						<div class="caption-two">
 							<small>phone:</small>
-							<h1>(410) 588-5465</h1>
+							<h1>
+								<a href="#">(410) 588-5465</a>
+							</h1>
 						</div>
 
 						<div class="caption-three">
@@ -655,15 +667,8 @@
 					<div class="form-send">
 
 						<div class="form-header">
-
-							<div class="form-name">
-								<input type="text" class="name" placeholder="Name">
-							</div>
-
-							<div class="form-emal">
-								<input type="text" class="emal" placeholder="E-mail">
-							</div>
-
+							<input type="text" class="name" placeholder="Name">
+							<input type="text" class="emal" placeholder="E-mail">
 						</div>
 
 						<div class="form-message">
@@ -702,8 +707,9 @@
 						<li><a href="javascript:void(0)">about</a></li>
 						<li><a href="javascript:void(0)">our work</a></li>
 						<li><a href="javascript:void(0)">our team</a></li>
-						<li><a href="javascript:void(0)">follow us</a></li>
-						<li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+						<li><a href="javascript:void(0)">follow us</a>
+						<i class="fa fa-linkedin" aria-hidden="true"></i></li>
+		
 					</ul>
 				</div>
 
@@ -715,18 +721,13 @@
 
 	</section>
 
-
-
-
-
-
+</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
   </script>
 
 	<script src="js/main.js"></script>
-  
-
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
